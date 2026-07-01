@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode: add `dark` class to <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-rose-50/40 text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-200;
+}
+
+/* Hide number input spinners for quantity inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Line clamp utility */
+.line-clamp-1 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; }
+.line-clamp-2 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+
+/* Skincare gradient backgrounds */
+.bg-skincare-gradient {
+  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 30%, #fecdd3 60%, #fda4af 100%);
+}
+
+.dark .bg-skincare-gradient {
+  background: linear-gradient(135deg, #1c1917 0%, #2d1b1e 30%, #3b1f24 60%, #4c2528 100%);
+}
+
+.bg-skincare-radial {
+  background: radial-gradient(ellipse at 50% 50%, #fdf2f8 0%, #fff1f2 50%, #fff 100%);
+}
+
+.dark .bg-skincare-radial {
+  background: radial-gradient(ellipse at 50% 50%, #1c1917 0%, #2d1b1e 50%, #111 100%);
+}
+
+/* Soft rose shadow */
+.shadow-rose {
+  box-shadow: 0 4px 14px 0 rgba(244, 63, 94, 0.08);
+}
+
+.shadow-rose-lg {
+  box-shadow: 0 10px 25px -5px rgba(244, 63, 94, 0.1), 0 4px 10px -5px rgba(244, 63, 94, 0.04);
+}
+
+/* Elegant divider */
+.divider-rose {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #fecdd3, transparent);
+}
+
+.dark .divider-rose {
+  background: linear-gradient(to right, transparent, #4c2528, transparent);
+}
+
+/* Custom scrollbar for skincare */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-rose-200 dark:bg-rose-900/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-rose-300 dark:bg-rose-800/50;
+}
+
+/* Leaf decoration for headings */
+.deco-leaf {
+  display: inline-block;
+  position: relative;
+}
+
+.deco-leaf::after {
+  content: "✦";
+  @apply text-rose-300 dark:text-rose-700 text-xs ml-2 align-super;
+}
+
+/* Smooth transitions for everything interactive */
+a, button, input, select, textarea {
+  @apply transition-all duration-200;
+}
