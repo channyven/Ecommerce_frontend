@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 const en = {
   // Navbar
-  'site.name': 'Glow & Grace',
+  'site.name': 'Beauty Care',
   'site.tagline': 'Skincare & Beauty',
   'search.placeholder': 'Search skincare products...',
   'nav.products': 'Products',
@@ -66,7 +66,7 @@ const en = {
 
   // Auth
   'login.title': 'Welcome Back',
-  'login.subtitle': 'Sign in to your Glow & Grace account',
+  'login.subtitle': 'Sign in to your Beauty Care account',
   'login.email': 'Email',
   'login.password': 'Password',
   'login.button': 'Sign In',
@@ -74,7 +74,7 @@ const en = {
   'login.no_account': "Don't have an account?",
   'login.signup_link': 'Sign Up',
   'register.title': 'Create Account',
-  'register.subtitle': 'Join the Glow & Grace family',
+  'register.subtitle': 'Join the Beauty Care family',
   'register.name': 'Name',
   'register.email': 'Email',
   'register.password': 'Password',
@@ -188,7 +188,7 @@ const en = {
 }
 
 const km = {
-  'site.name': 'Glow & Grace',
+  'site.name': 'Beauty Care',
   'site.tagline': 'គ្រឿងសម្អាង និងសម្រស់',
   'search.placeholder': 'ស្វែងរកផលិតផលថែរក្សាស្បែក...',
   'nav.products': 'ផលិតផល',
@@ -247,7 +247,7 @@ const km = {
   'detail.reviews_label': 'ការវាយតម្លៃ',
 
   'login.title': 'សូមស្វាគមន៍ត្រឡប់មកវិញ',
-  'login.subtitle': 'ចូលទៅកាន់គណនី Glow & Grace របស់អ្នក',
+  'login.subtitle': 'ចូលទៅកាន់គណនី Beauty Care របស់អ្នក',
   'login.email': 'អ៊ីមែល',
   'login.password': 'ពាក្យសម្ងាត់',
   'login.button': 'ចូល',
@@ -255,7 +255,7 @@ const km = {
   'login.no_account': 'មិនទាន់មានគណនី?',
   'login.signup_link': 'ចុះឈ្មោះ',
   'register.title': 'បង្កើតគណនី',
-  'register.subtitle': 'ចូលរួមជាមួយក្រុមគ្រួសារ Glow & Grace',
+  'register.subtitle': 'ចូលរួមជាមួយក្រុមគ្រួសារ Beauty Care',
   'register.name': 'ឈ្មោះ',
   'register.email': 'អ៊ីមែល',
   'register.password': 'ពាក្យសម្ងាត់',
